@@ -8,9 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useApp } from "@/contexts/AppContext";
 import { toast } from "sonner";
-import dynamic from "next/dynamic";
-
-const Hero3D = dynamic(() => import("@/components/Hero3D"), { ssr: false });
+import Hero3D from "@/components/Hero3D";
 
 export default function Home() {
   const router = useRouter();
