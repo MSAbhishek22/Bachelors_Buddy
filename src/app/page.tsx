@@ -8,6 +8,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useApp } from "@/contexts/AppContext";
 import { toast } from "sonner";
+import dynamic from "next/dynamic";
+
+const Hero3D = dynamic(() => import("@/components/Hero3D"), { ssr: false });
 
 export default function Home() {
   const router = useRouter();
@@ -81,6 +84,11 @@ export default function Home() {
           </p>
         </div>
 
+        {/* 3D shared-flat diorama */}
+        <div className="mb-10">
+          <Hero3D />
+        </div>
+
         {/* Feature Cards */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           <div className="glass-card rounded-3xl p-6 border border-white/20 hover:scale-105 transition-transform">
@@ -117,6 +125,22 @@ export default function Home() {
             <p className="text-white/80 text-sm">
               Beautiful charts and graphs to track your spending patterns
             </p>
+          </div>
+        </div>
+
+        {/* Problem → Solution → Outcome */}
+        <div id="features" className="grid md:grid-cols-3 gap-4 mb-12 text-left">
+          <div className="glass-card rounded-3xl p-5 border border-white/20">
+            <p className="text-xs font-bold tracking-widest text-white/60 mb-1">THE PROBLEM</p>
+            <p className="text-white/90 text-sm">Shared flats run on memory and rough maths — and someone always ends up owed.</p>
+          </div>
+          <div className="glass-card rounded-3xl p-5 border border-white/20">
+            <p className="text-xs font-bold tracking-widest text-white/60 mb-1">THE FIX</p>
+            <p className="text-white/90 text-sm">One room per flat. Log an expense once, split it fairly, see who owes what.</p>
+          </div>
+          <div className="glass-card rounded-3xl p-5 border border-white/20">
+            <p className="text-xs font-bold tracking-widest text-white/60 mb-1">THE OUTCOME</p>
+            <p className="text-white/90 text-sm">No awkward money chats. Everyone pays their share, on time.</p>
           </div>
         </div>
 
