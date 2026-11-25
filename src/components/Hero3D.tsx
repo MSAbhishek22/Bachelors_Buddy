@@ -160,10 +160,10 @@ export default function Hero3D() {
         aria-label="3D shared flat: a rotating room with bed, desk and kitchen pods and three expense rings"
         className="h-[340px] w-full rounded-3xl border border-white/20 bg-gradient-to-b from-orange-950/40 to-transparent shadow-2xl"
       />
-      <p className="mt-3 text-center text-sm text-white/70">
+      <p className="mt-3 text-center text-sm text-[#2D2D2D]/75">
         Your flat in 3D — bed, desk, kitchen, and the three rings every flat shares: rent, food, bills. Drag to look around.
       </p>
-      <p className="mt-1 text-center text-sm text-white/70">
+      <p className="mt-1 text-center text-sm text-[#2D2D2D]/75">
         <a href="#features" className="underline underline-offset-4">↓ See how splitting works</a>
       </p>
     </div>

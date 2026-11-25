@@ -68,15 +68,15 @@ export default function Home() {
         {/* Hero Section */}
         <div className="text-center mb-12">
           <div className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full">
-            <span className="text-white font-semibold flex items-center gap-2">
+            <span className="text-[#2D2D2D] font-semibold flex items-center gap-2">
               <Sparkles className="w-4 h-4" />
               Your Friendly Expense Tracker
             </span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-[#2D2D2D] mb-4 tracking-tight">
             BachelorBuddy
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-[#2D2D2D]/85 max-w-2xl mx-auto">
             Split expenses, track budgets, and live harmoniously with your
             roommates
           </p>
@@ -93,10 +93,10 @@ export default function Home() {
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center mb-4">
               <Users className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-lg font-semibold text-white mb-2">
+            <h3 className="text-lg font-semibold text-[#2D2D2D] mb-2">
               Room-Based Splitting
             </h3>
-            <p className="text-white/80 text-sm">
+            <p className="text-[#2D2D2D]/80 text-sm">
               Create rooms, invite roommates, and split expenses fairly
             </p>
           </div>
@@ -105,10 +105,10 @@ export default function Home() {
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center mb-4">
               <TrendingUp className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-lg font-semibold text-white mb-2">
+            <h3 className="text-lg font-semibold text-[#2D2D2D] mb-2">
               AI Insights
             </h3>
-            <p className="text-white/80 text-sm">
+            <p className="text-[#2D2D2D]/80 text-sm">
               Get smart spending insights and personalized recommendations
             </p>
           </div>
@@ -117,10 +117,10 @@ export default function Home() {
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-yellow-500 to-amber-500 flex items-center justify-center mb-4">
               <PieChart className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-lg font-semibold text-white mb-2">
+            <h3 className="text-lg font-semibold text-[#2D2D2D] mb-2">
               Visual Analytics
             </h3>
-            <p className="text-white/80 text-sm">
+            <p className="text-[#2D2D2D]/80 text-sm">
               Beautiful charts and graphs to track your spending patterns
             </p>
           </div>
@@ -129,16 +129,16 @@ export default function Home() {
         {/* Problem → Solution → Outcome */}
         <div id="features" className="grid md:grid-cols-3 gap-4 mb-12 text-left">
           <div className="glass-card rounded-3xl p-5 border border-white/20">
-            <p className="text-xs font-bold tracking-widest text-white/60 mb-1">THE PROBLEM</p>
-            <p className="text-white/90 text-sm">Shared flats run on memory and rough maths — and someone always ends up owed.</p>
+            <p className="text-xs font-bold tracking-widest text-[#2D2D2D]/70 mb-1">THE PROBLEM</p>
+            <p className="text-[#2D2D2D]/90 text-sm">Shared flats run on memory and rough maths — and someone always ends up owed.</p>
           </div>
           <div className="glass-card rounded-3xl p-5 border border-white/20">
-            <p className="text-xs font-bold tracking-widest text-white/60 mb-1">THE FIX</p>
-            <p className="text-white/90 text-sm">One room per flat. Log an expense once, split it fairly, see who owes what.</p>
+            <p className="text-xs font-bold tracking-widest text-[#2D2D2D]/70 mb-1">THE FIX</p>
+            <p className="text-[#2D2D2D]/90 text-sm">One room per flat. Log an expense once, split it fairly, see who owes what.</p>
           </div>
           <div className="glass-card rounded-3xl p-5 border border-white/20">
-            <p className="text-xs font-bold tracking-widest text-white/60 mb-1">THE OUTCOME</p>
-            <p className="text-white/90 text-sm">No awkward money chats. Everyone pays their share, on time.</p>
+            <p className="text-xs font-bold tracking-widest text-[#2D2D2D]/70 mb-1">THE OUTCOME</p>
+            <p className="text-[#2D2D2D]/90 text-sm">No awkward money chats. Everyone pays their share, on time.</p>
           </div>
         </div>
 
@@ -148,7 +148,7 @@ export default function Home() {
             <Button
               size="lg"
               onClick={() => setShowCreateRoom(true)}
-              className="glass-card border-2 border-white/40 text-white hover:bg-white/20 text-lg px-8 py-6 rounded-2xl backdrop-blur-md hover:scale-105 transition-all"
+              className="glass-card border-2 border-white/40 text-[#2D2D2D] hover:bg-white/20 text-lg px-8 py-6 rounded-2xl backdrop-blur-md hover:scale-105 transition-all"
             >
               <Plus className="w-5 h-5 mr-2" />
               Create Room
@@ -165,12 +165,12 @@ export default function Home() {
         ) : (
           <div className="max-w-md mx-auto">
             <div className="glass-card rounded-3xl p-8 border border-white/20">
-              <h2 className="text-2xl font-bold text-white mb-6">
+              <h2 className="text-2xl font-bold text-[#2D2D2D] mb-6">
                 Create Your Room
               </h2>
               <form onSubmit={handleCreateRoom} className="space-y-4">
                 <div>
-                  <Label htmlFor="roomName" className="text-white">
+                  <Label htmlFor="roomName" className="text-[#2D2D2D]">
                     Room Name
                   </Label>
                   <Input
@@ -178,11 +178,11 @@ export default function Home() {
                     value={roomName}
                     onChange={(e) => setRoomName(e.target.value)}
                     placeholder="e.g., Apartment 4B"
-                    className="mt-1 bg-white/20 border-white/30 text-white placeholder:text-white/60"
+                    className="mt-1 bg-white/20 border-white/30 text-[#2D2D2D] placeholder:text-[#2D2D2D]/60"
                   />
                 </div>
                 <div>
-                  <Label htmlFor="members" className="text-white">
+                  <Label htmlFor="members" className="text-[#2D2D2D]">
                     Members (comma-separated)
                   </Label>
                   <Input
@@ -190,7 +190,7 @@ export default function Home() {
                     value={memberNames}
                     onChange={(e) => setMemberNames(e.target.value)}
                     placeholder="Alex, Jordan, Sam"
-                    className="mt-1 bg-white/20 border-white/30 text-white placeholder:text-white/60"
+                    className="mt-1 bg-white/20 border-white/30 text-[#2D2D2D] placeholder:text-[#2D2D2D]/60"
                   />
                 </div>
                 <div className="flex gap-3 pt-2">
@@ -204,7 +204,7 @@ export default function Home() {
                     type="button"
                     onClick={() => setShowCreateRoom(false)}
                     variant="outline"
-                    className="flex-1 border-white/40 text-white hover:bg-white/10"
+                    className="flex-1 border-white/40 text-[#2D2D2D] hover:bg-white/10"
                   >
                     Cancel
                   </Button>
